@@ -22,6 +22,12 @@ const NetflixSeries = () => {
         return Type;
     }
 
+    let age = 17;
+
+    let canWatch = "Not Available"
+    if(age>=18) canWatch = "Watch Now";
+
+
 
     return (
         // <div>
@@ -41,6 +47,9 @@ const NetflixSeries = () => {
             <h3>Rating: {rating}</h3>
             <p>Summary: {summary}</p>
             <p>Type : {seriesType()}</p>
+            {/* <button>{age > 18 ? "Watch now" : "Not Available" }</button> */}
+            <button>{canWatch}</button>
+
         </div>
     )
 }
