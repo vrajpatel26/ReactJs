@@ -56,32 +56,13 @@
 //----------------Netflix cards-------------------
 
 import seriesData from "../API/seriesData.json"
+import { SeriesCards } from "./SeriesCards"
 
-export const NetflixSeries = () => {
-
-
+const NetflixSeries = () => {
     return (
         <ul>
             {seriesData.map((currEle) => {
-                return (    
-                    <li key = {currEle.id}>
-                        <div>
-                            <img src={currEle.img_url}
-                                alt={currEle.name}
-                                height="40%"
-                                width="40%"
-                            />
-                        </div>
-                        <h2>Name: {currEle.name}</h2>
-                        <h3>Rating: {currEle.rating}</h3>
-                        <p>Summary: {currEle.description}</p>
-                        <p>Genre : {currEle.genre}</p>
-                        <p>Cast : {currEle.cast}</p>
-                        <a href={currEle.watch_url} target="_">
-                            <button>Watch Now</button>
-                        </a>
-                    </li>
-                )
+                return <SeriesCards key={currEle.id} data={currEle} />
             })}
         </ul>
 
@@ -89,5 +70,6 @@ export const NetflixSeries = () => {
 }
 
 export default NetflixSeries;
+
 
 
