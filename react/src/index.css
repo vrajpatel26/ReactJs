@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6{
   color: var(--heading-color);
   font-family: "poppins",sans-serif;
   font-weight: 600;
+  font-size: 2rem;
 }
 
 h1{
@@ -20,7 +21,7 @@ h1{
 }
 
 p,li,a,label{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: var(--para-color);
   line-height: 1.5;
@@ -38,7 +39,8 @@ a{
 :root{
   --heading-color:black;
   --para-color:grey;
-
+  --btn-color:rgb(80, 80, 234);
+  --btn-hover-color:rgb(15, 15, 48);
 }
 
 .container{
