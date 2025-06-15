@@ -43,6 +43,9 @@
 //     )
 // }
 
+
+
+
 //-------------------Css module------------------------------------------------------
 
 
@@ -152,7 +155,7 @@ export const SeriesCards = (props) => {
                 {/* <h3>Rating: <span className={` rating ${rating >= 8.5 ? "super-hit" : "average"}`}> {rating} </span> </h3> */}
                 <h3>Rating: <span className={` ${styles.rating} ${ratingColor}`}> {rating} </span> </h3>
 
-                <p>Summary: {description}</p>
+                <p className="text-3xl font-bold underline">Summary: {description}</p>
                 <p>Genre : {genre.join(", ")}</p>
                 <p>Cast : {cast.join(", ")}</p>
                 <a href={watch_url} target="_">
