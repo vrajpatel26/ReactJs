@@ -1,0 +1,42 @@
+/* .main-div {
+    border: 2px solid black;
+    background-color: aqua;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.g-div {
+    border: 2px solid black;
+    background-color: aquamarine;
+    height: 200px;
+    width: 270px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+
+.p-div {
+    border: 2px solid black;
+    background-color: blue;
+    height: 150px;
+    width: 200px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-div {
+    border: 2px solid black;
+    background-color: green;
+    height: 90px;
+    width: 130px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
