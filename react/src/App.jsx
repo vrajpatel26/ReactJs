@@ -9,7 +9,9 @@
 // import {State} from "./components/hooks/State"
 // import { Challange } from "./components/hooks/Challange"
 // import {DerivedState} from "./components/DerivedState"
-import {LiftStateUp} from "./components/LiftStateUp"
+// import {LiftStateUp} from "./components/LiftStateUp"
+import {ToggleSwitch} from "./Projects/ToggleSwitch"
+import "./Projects/ToggleSwitch.css"
 
 
 
@@ -27,7 +29,8 @@ export const App = () => {
             {/* <State /> */}
             {/* <Challange /> */}
             {/* <DerivedState /> */}
-            <LiftStateUp />
+            {/* <LiftStateUp /> */}
+            <ToggleSwitch />
 
 
         </section>)
