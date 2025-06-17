@@ -6,7 +6,11 @@
 // import { EventProps } from "./components/EventProps"
 // import './index.css'
 // import { EventPropagation } from "./components/EventPropagation"
-import {State} from "./components/hooks/State"
+// import {State} from "./components/hooks/State"
+// import { Challange } from "./components/hooks/Challange"
+// import {DerivedState} from "./components/DerivedState"
+import {LiftStateUp} from "./components/LiftStateUp"
+
 
 
 export const App = () => {
@@ -20,7 +24,10 @@ export const App = () => {
             {/* <EventHandling/> */}
             {/* <EventProps /> */}
             {/* < EventPropagation /> */}
-            <State />
+            {/* <State /> */}
+            {/* <Challange /> */}
+            {/* <DerivedState /> */}
+            <LiftStateUp />
 
 
         </section>)
