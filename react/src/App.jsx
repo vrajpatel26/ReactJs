@@ -10,9 +10,9 @@
 // import { Challange } from "./components/hooks/Challange"
 // import {DerivedState} from "./components/DerivedState"
 // import {LiftStateUp} from "./components/LiftStateUp"
-import {ToggleSwitch} from "./Projects/ToggleSwitch"
-import "./Projects/ToggleSwitch.css"
-
+// import {ToggleSwitch} from "./Projects/ToggleSwitch"
+// import "./Projects/ToggleSwitch.css"
+import {Todo} from "./Projects/Todo/Todo"
 
 
 export const App = () => {
@@ -30,7 +30,9 @@ export const App = () => {
             {/* <Challange /> */}
             {/* <DerivedState /> */}
             {/* <LiftStateUp /> */}
-            <ToggleSwitch />
+            {/* <ToggleSwitch /> */}
+            <Todo/>
+
 
 
         </section>)
