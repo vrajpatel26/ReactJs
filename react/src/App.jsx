@@ -13,7 +13,7 @@
 // import {ToggleSwitch} from "./Projects/ToggleSwitch"
 // import "./Projects/ToggleSwitch.css"
 import {Todo} from "./Projects/Todo/Todo"
-
+import "./Projects/Todo/Todo.css"
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>

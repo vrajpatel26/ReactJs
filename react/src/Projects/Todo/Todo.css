@@ -1,1 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 26, 33);
+}
+
+.todo-container {
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* background-color: black; */
+    margin-bottom: 10rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: yellow;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: yellow;
+}
+
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+form input {
+    height: 2.5rem;
+    width: 17rem;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+form input::placeholder{
+    color: black;
+    font-size: 1rem;
+
+}
+
+form button {
+    height: 2.5rem;
+    width: 120px;
+    border: none;
+    background-color: yellow;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.myUnOrderList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    height: 45px;
+    width: 330px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+
+}
+
+span {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    /* text-align: center; */
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+.check-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: green;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.delete-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 1.5rem;
+color: white;
+
+}
