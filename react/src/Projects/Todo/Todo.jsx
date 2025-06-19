@@ -2,9 +2,13 @@ import { useState } from "react"
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
 import { TodoDateTime } from "./TodoDateTime";
+import { getLocalStorageTodoData, setLocalStorageTodoData } from "./ToLocalStorage";
+
+
+
 
 export const Todo = () => {
-    const [task, setTask] = useState([])
+    const [task, setTask] = useState(() => getLocalStorageTodoData())
 
 
 
@@ -26,9 +30,10 @@ export const Todo = () => {
 
     }
 
+    //add data to localStorage
+  setLocalStorageTodoData(task);
 
-
-
+    //handle delete data 
     const handleDeleteTodo = (value) => {
         // console.log(task);
         // console.log(value);
@@ -38,12 +43,12 @@ export const Todo = () => {
 
     }
 
-
+    //to delete all data
     const handleCleaerAllBtn = () => {
         setTask([])
     }
 
-
+    //to checked (line on the data) data
     const handleCheckedTodo = (content) => {
         const updatedTask = task.map((curTask) => {
             if (curTask.content === content) {
