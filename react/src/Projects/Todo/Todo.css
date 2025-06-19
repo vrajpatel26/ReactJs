@@ -146,3 +146,11 @@ color: white;
     color: white;
     margin-top: 20px;
 }
+
+.checkList{
+    text-decoration: line-through;
+}
+
+.notCheckList{
+    text-decoration: none;
+}
