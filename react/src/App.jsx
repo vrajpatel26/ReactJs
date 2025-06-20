@@ -12,8 +12,10 @@
 // import {LiftStateUp} from "./components/LiftStateUp"
 // import {ToggleSwitch} from "./Projects/ToggleSwitch"
 // import "./Projects/ToggleSwitch.css"
-import {Todo} from "./Projects/Todo/Todo"
-import "./Projects/Todo/Todo.css"
+import { ShortCircuit } from "./components/ShortCircuit"
+// import { Keys } from "./Keys"
+// import {Todo} from "./Projects/Todo/Todo"
+// import "./Projects/Todo/Todo.css"
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -31,7 +33,9 @@ export const App = () => {
             {/* <DerivedState /> */}
             {/* <LiftStateUp /> */}
             {/* <ToggleSwitch /> */}
-            <Todo/>
+            {/* <Todo/> */}
+            {/* <Keys /> */}
+            <ShortCircuit />
 
 
 
