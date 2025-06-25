@@ -20,7 +20,12 @@
 // import { ControlledForm } from "./components/hooks/useState/ControlledForm"
 // import { RegistrationForm } from "./components/hooks/useState/RegistrationForm"
 // import { LoginPage } from "./components/hooks/useState/LoginPage"
-import { ContactForm } from "./components/hooks/useState/ContactForm"
+// import { ContactForm } from "./components/hooks/useState/ContactForm"
+
+// import { ReactUseEffect } from "./components/hooks/useEffect"
+// import { UseEffectChallange } from "./components/hooks/useEffect/useEffectChallange"
+import { CleanUp } from "./components/hooks/useEffect/CleanUp"
+
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -45,7 +50,12 @@ export const App = () => {
             {/* <ControlledForm /> */}
             {/* <RegistrationForm /> */}
             {/* <LoginPage /> */}
-            <ContactForm />
+            {/* <ContactForm /> */}
+            
+
+            {/* <ReactUseEffect /> */}
+            {/* <UseEffectChallange /> */}
+            <CleanUp />
 
 
         </section>)
