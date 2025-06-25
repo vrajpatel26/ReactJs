@@ -17,7 +17,10 @@
 // import {Todo} from "./Projects/Todo/Todo"
 // import "./Projects/Todo/Todo.css"
 // import {CounterChallange} from "./components/hooks/useState/CounterChallange"
-import { ControlledForm } from "./components/hooks/useState/ControlledForm"
+// import { ControlledForm } from "./components/hooks/useState/ControlledForm"
+// import { RegistrationForm } from "./components/hooks/useState/RegistrationForm"
+// import { LoginPage } from "./components/hooks/useState/LoginPage"
+import { ContactForm } from "./components/hooks/useState/ContactForm"
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -39,8 +42,10 @@ export const App = () => {
             {/* <Keys /> */}
             {/* <ShortCircuit /> */}
             {/* <CounterChallange/> */}
-            <ControlledForm />
-
+            {/* <ControlledForm /> */}
+            {/* <RegistrationForm /> */}
+            {/* <LoginPage /> */}
+            <ContactForm />
 
 
         </section>)
