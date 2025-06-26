@@ -22,10 +22,13 @@
 // import { LoginPage } from "./components/hooks/useState/LoginPage"
 // import { ContactForm } from "./components/hooks/useState/ContactForm"
 
+
+
 // import { ReactUseEffect } from "./components/hooks/useEffect"
 // import { UseEffectChallange } from "./components/hooks/useEffect/useEffectChallange"
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp"
-import { FetchAPI } from "./components/hooks/useEffect/FetchAPI"
+// import { FetchAPI } from "./components/hooks/useEffect/FetchAPI"
+import { Pokemon } from "./Projects/Pokemon/Pokemon"
 
 
 export const App = () => {
@@ -57,7 +60,8 @@ export const App = () => {
             {/* <ReactUseEffect /> */}
             {/* <UseEffectChallange /> */}
             {/* <CleanUp /> */}
-            <FetchAPI />
+            {/* <FetchAPI /> */}
+            <Pokemon />
 
 
         </section>)
