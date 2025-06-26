@@ -24,7 +24,8 @@
 
 // import { ReactUseEffect } from "./components/hooks/useEffect"
 // import { UseEffectChallange } from "./components/hooks/useEffect/useEffectChallange"
-import { CleanUp } from "./components/hooks/useEffect/CleanUp"
+// import { CleanUp } from "./components/hooks/useEffect/CleanUp"
+import { FetchAPI } from "./components/hooks/useEffect/FetchAPI"
 
 
 export const App = () => {
@@ -55,7 +56,8 @@ export const App = () => {
 
             {/* <ReactUseEffect /> */}
             {/* <UseEffectChallange /> */}
-            <CleanUp />
+            {/* <CleanUp /> */}
+            <FetchAPI />
 
 
         </section>)
