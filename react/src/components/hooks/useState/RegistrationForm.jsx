@@ -24,7 +24,7 @@ export const RegistrationForm = () => {
         console.log(user);
         
 
-        
+        //for removes data from screen when submit
         setUser({
             userName: "",
             email: "",

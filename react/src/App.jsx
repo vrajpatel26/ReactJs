@@ -28,7 +28,10 @@
 // import { UseEffectChallange } from "./components/hooks/useEffect/useEffectChallange"
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp"
 // import { FetchAPI } from "./components/hooks/useEffect/FetchAPI"
-import { Pokemon } from "./Projects/Pokemon/Pokemon"
+// import { Pokemon } from "./Projects/Pokemon/Pokemon"
+
+// import { UseRefs } from "./components/hooks/useRef"
+import { ForwardRef } from "./components/hooks/useRef/ForwardRef"
 
 
 export const App = () => {
@@ -55,14 +58,15 @@ export const App = () => {
             {/* <RegistrationForm /> */}
             {/* <LoginPage /> */}
             {/* <ContactForm /> */}
-            
 
             {/* <ReactUseEffect /> */}
             {/* <UseEffectChallange /> */}
             {/* <CleanUp /> */}
             {/* <FetchAPI /> */}
-            <Pokemon />
+            {/* <Pokemon /> */}
 
-
-        </section>)
+            {/* <UseRefs /> */}
+            <ForwardRef />
+        </section>
+    )
 }

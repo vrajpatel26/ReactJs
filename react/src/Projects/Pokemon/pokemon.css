@@ -223,3 +223,40 @@ pokemon-info {
     cursor: pointer;
   }
 }
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .grid-three-cols,
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pokemon-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .pokemon-image {
+    height: auto;
+    width: 70%;
+  }
+
+  .pokemon-name {
+    font-size: 2.4rem;
+  }
+
+  .pokemon-highlight p {
+    font-size: 1.4rem;
+    padding: 0.4rem 1.6rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .short-container h1 {
+    font-size: 3rem;
+  }
+}
