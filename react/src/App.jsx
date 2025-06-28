@@ -31,7 +31,12 @@
 // import { Pokemon } from "./Projects/Pokemon/Pokemon"
 
 // import { UseRefs } from "./components/hooks/useRef"
-import { ForwardRef } from "./components/hooks/useRef/ForwardRef"
+// import { ForwardRef } from "./components/hooks/useRef/ForwardRef"
+
+// import { UseId } from "./components/hooks/useId"
+
+import { ParentComponent } from "./components/PropDrilling"
+
 
 
 export const App = () => {
@@ -66,7 +71,11 @@ export const App = () => {
             {/* <Pokemon /> */}
 
             {/* <UseRefs /> */}
-            <ForwardRef />
+            {/* <ForwardRef /> */}
+            
+            {/* <UseId /> */}
+
+            <ParentComponent />
         </section>
     )
 }
