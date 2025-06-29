@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* 
 *{
   margin: 0px;
   padding: 0px;
@@ -65,4 +65,4 @@ a{
 
 .grid-three-cols{
   grid-template-columns: repeat(3,1fr);
-}
+} */

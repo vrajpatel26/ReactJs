@@ -4,7 +4,7 @@
 // import styles from "./components/Netflix.module.css"
 // import { EventHandling } from "./components/EventHandling"
 // import { EventProps } from "./components/EventProps"
-// import './index.css'
+import './index.css'
 // import { EventPropagation } from "./components/EventPropagation"
 // import {State} from "./components/hooks/State"
 // import { Challange } from "./components/hooks/useState/Challange"
@@ -35,9 +35,11 @@
 
 // import { ParentComponent } from "./components/PropDrilling"
 
-import { BioProvider } from "./components/hooks/contextAPI"
-import { About } from "./components/hooks/contextAPI/About"
-import { Home } from "./components/hooks/contextAPI/Home"
+// import { BioProvider } from "./components/hooks/contextAPI"
+// import { About } from "./components/hooks/contextAPI/About"
+// import { Home } from "./components/hooks/contextAPI/Home"
+
+import { DarkLight, ThemeProvider } from "./components/hooks/contextAPI/DarkLight"
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -77,10 +79,15 @@ export const App = () => {
 
             {/* <ParentComponent /> */}
 
-            <BioProvider>
+            {/* <BioProvider>
                 <Home />
                 <About />
-            </BioProvider>
+            </BioProvider> */}
+
+            <ThemeProvider>
+                <DarkLight />
+            </ThemeProvider>
+
         </section>
     )
 }
