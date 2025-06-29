@@ -22,8 +22,6 @@
 // import { LoginPage } from "./components/hooks/useState/LoginPage"
 // import { ContactForm } from "./components/hooks/useState/ContactForm"
 
-
-
 // import { ReactUseEffect } from "./components/hooks/useEffect"
 // import { UseEffectChallange } from "./components/hooks/useEffect/useEffectChallange"
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp"
@@ -35,9 +33,11 @@
 
 // import { UseId } from "./components/hooks/useId"
 
-import { ParentComponent } from "./components/PropDrilling"
+// import { ParentComponent } from "./components/PropDrilling"
 
-
+import { BioProvider } from "./components/hooks/contextAPI"
+import { About } from "./components/hooks/contextAPI/About"
+import { Home } from "./components/hooks/contextAPI/Home"
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -75,7 +75,12 @@ export const App = () => {
             
             {/* <UseId /> */}
 
-            <ParentComponent />
+            {/* <ParentComponent /> */}
+
+            <BioProvider>
+                <Home />
+                <About />
+            </BioProvider>
         </section>
     )
 }
