@@ -39,7 +39,11 @@ import './index.css'
 // import { About } from "./components/hooks/contextAPI/About"
 // import { Home } from "./components/hooks/contextAPI/Home"
 
-import { DarkLight, ThemeProvider } from "./components/hooks/contextAPI/DarkLight"
+// import { DarkLight, ThemeProvider } from "./components/hooks/contextAPI/DarkLight"
+
+// import { UseReducerHook } from './components/hooks/useReducer/index'
+import { ReactMemo } from './components/hooks/Memo/ReactMemo'
+
 
 export const App = () => {
     //  return <h1>Hello , Vraj Patel</h1>
@@ -84,9 +88,12 @@ export const App = () => {
                 <About />
             </BioProvider> */}
 
-            <ThemeProvider>
+            {/* <ThemeProvider>
                 <DarkLight />
-            </ThemeProvider>
+            </ThemeProvider> */}
+
+            {/* <UseReducerHook /> */}
+            <ReactMemo />
 
         </section>
     )
