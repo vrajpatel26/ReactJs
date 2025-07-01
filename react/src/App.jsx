@@ -42,7 +42,9 @@ import './index.css'
 // import { DarkLight, ThemeProvider } from "./components/hooks/contextAPI/DarkLight"
 
 // import { UseReducerHook } from './components/hooks/useReducer/index'
-import { ReactMemo } from './components/hooks/Memo/ReactMemo'
+// import { ReactMemo } from './components/hooks/Memo/ReactMemo'
+import { MemoParentComponent } from './components/hooks/Memo/UseMemo'
+
 
 
 export const App = () => {
@@ -93,7 +95,8 @@ export const App = () => {
             </ThemeProvider> */}
 
             {/* <UseReducerHook /> */}
-            <ReactMemo />
+            {/* <ReactMemo /> */}
+            <MemoParentComponent />
 
         </section>
     )
