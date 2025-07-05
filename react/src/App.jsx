@@ -43,7 +43,8 @@ import './index.css'
 
 // import { UseReducerHook } from './components/hooks/useReducer/index'
 // import { ReactMemo } from './components/hooks/Memo/ReactMemo'
-import { MemoParentComponent } from './components/hooks/Memo/UseMemo'
+// import { Test } from './test'
+// import { MemoParentComponent } from './components/hooks/Memo/UseMemo'
 
 
 
@@ -59,6 +60,7 @@ export const App = () => {
             {/* <EventProps /> */}
             {/* < EventPropagation /> */}
             {/* <State /> */}
+            {/* <Test /> */}
             {/* <Challange /> */}
             {/* <DerivedState /> */}
             {/* <LiftStateUp /> */}
@@ -96,7 +98,7 @@ export const App = () => {
 
             {/* <UseReducerHook /> */}
             {/* <ReactMemo /> */}
-            <MemoParentComponent />
+            {/* <MemoParentComponent /> */}
 
         </section>
     )

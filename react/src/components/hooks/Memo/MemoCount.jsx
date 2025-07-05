@@ -4,7 +4,7 @@
 
 import { memo, useRef } from "react"
 
-export const Counts = memo(() => {
+export const Counts = memo(({BipData}) => {
 
     const renderCounts = useRef(0)
     console.log(renderCounts);
@@ -13,8 +13,9 @@ export const Counts = memo(() => {
     return (
         <div className="font-display text-center text-3xl">
             <p>Nothing changed here but Now I rendered :
-                <span className="text-red-600">{renderCounts.current++} times</span>
+                <span className="text-red-600">{renderCounts.current++} time(s)</span>
             </p>
+            <p>My name is {BipData.name}</p>
         </div>
     )
 }
