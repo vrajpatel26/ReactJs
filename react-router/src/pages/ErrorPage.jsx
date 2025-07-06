@@ -1,6 +1,13 @@
-import { NavLink, useRouteError } from "react-router-dom"
+import { NavLink, useNavigate, useRouteError } from "react-router-dom"
 
 export const ErrorPage = () => {
+
+    const navigate = useNavigate()    
+
+    const handleGoBack = () =>{
+        // navigate("/")
+        navigate(-1)
+    }
 
     const error = useRouteError()
 
@@ -23,9 +30,14 @@ export const ErrorPage = () => {
                             ... Back to previous page
                         </p>
                     </div>
-                    <NavLink to="/" className="btn">
+                    {/* <NavLink to="/" className="btn">
                         Go to Home page 
-                    </NavLink>
+                    </NavLink> */}
+
+
+                    {/* useNavigate */}
+                    <button className="btn" onClick={handleGoBack}>Go Back</button>
+
                 </div>
             </section>
 
