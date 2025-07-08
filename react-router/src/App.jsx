@@ -8,6 +8,8 @@ import { AppLayout } from "./components/layout/AppLayout"
 import "./App.css"
 import { ErrorPage } from "./pages/ErrorPage"
 import { getMoviesData } from "./API/getAPIData"
+import { MovieDetails } from "./components/UI/MovieDetails"
+import { getMovieDetails } from "./API/getMovieDetails"
 const App = () => {
 
   //Old Method
@@ -42,11 +44,16 @@ const App = () => {
         {
           path: "/about",
           element: <About />
-        }, 
+        },
         {
           path: "/movie",
           element: <Movie />,
           loader: getMoviesData,
+        },
+        {
+          path: "/movie/:MovieID",
+          element: <MovieDetails />,
+          loader: getMovieDetails
         },
         {
           path: "/contact",

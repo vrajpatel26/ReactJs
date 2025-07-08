@@ -6,6 +6,5 @@ export const getMoviesData = async () => {
         return data;
     } catch (error) {
         console.log(error);
-
     }
 }

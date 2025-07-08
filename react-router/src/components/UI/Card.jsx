@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom"
 import "./Card.css"
 
 
-export const Card = ({curMovie}) => {
+export const Card = ({ curMovie }) => {
 
-    const {Poster,imdbID} = curMovie
+    const { Poster, imdbID } = curMovie
     return (
         <>
             <li className="hero-container">
@@ -14,7 +15,9 @@ export const Card = ({curMovie}) => {
 
                     <div className="ticket-container">
                         <div className="ticket__content">
-                            <button className="ticket__buy-btn">Watch</button>
+                            <NavLink to={`/movie/${imdbID}`}>
+                                <button className="ticket__buy-btn">Watch</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
