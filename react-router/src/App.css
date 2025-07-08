@@ -83,7 +83,7 @@ a:hover {
 .container {
   max-width: 142rem;
   margin: 0 auto;
-  padding: 9.6rem 2.4rem;
+  /* padding: 9.6rem 2.4rem; */
 }
 :is(
     .section-extra-product,
@@ -310,7 +310,7 @@ main .section-hero {
 }
 .section-hero img {
   width: 100%;
-  height: auto;
+  height: 600px;
   /* transform: scaleX(-1); */
 }
 .div-extra {
