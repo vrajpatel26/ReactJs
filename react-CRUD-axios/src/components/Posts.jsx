@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { deletePost, getPost } from "../API/postAPI";
 import "../App.css"
+import { Form } from "./Form";
 
 
 export const Posts = () => {
@@ -36,26 +37,32 @@ export const Posts = () => {
     }
 
     return (
-        <section className="section-post">
-            <ol>
-                {
-                    data.map((currEle) => {
-
-                        const { id, title, body } = currEle
-                        return (
-                            <li key={id}>
-                                <p>Title: {title}</p>
-                                <p>Body: {body}</p>
-                                <button>Edit</button>
-                                <button
-                                    className="btn-delete"
-                                    onClick={() => handleDeletePost(id)}>Delete
-                                </button>
-                            </li>
-                        )
-                    })
-                }
-            </ol>
+        <>
+        <section className="section-form">
+            <Form data={data} setData={setData} />
         </section>
+            <section className="section-post">
+                <ol>
+                    {
+                        data.map((currEle) => {
+
+                            const { id, title, body } = currEle
+                            return (
+                                <li key={id}>
+                                    <p>Title: {title}</p>
+                                    <p>Body: {body}</p>
+                                    <button>Edit</button>
+                                    <button
+                                        className="btn-delete"
+                                        onClick={() => handleDeletePost(id)}>Delete
+                                    </button>
+                                </li>
+                            )
+                        })
+                    }
+                </ol>
+            </section>
+        </>
+
     )
 }
